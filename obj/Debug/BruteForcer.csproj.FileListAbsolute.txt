@@ -1,0 +1,5 @@
+C:\Users\nicol\Documents\GitHub\Archive-Unlocker-Async\obj\Debug\BruteForcer.csprojAssemblyReference.cache
+C:\Users\nicol\Documents\GitHub\Archive-Unlocker-Async\obj\Debug\MainWindow.g.cs
+C:\Users\nicol\Documents\GitHub\Archive-Unlocker-Async\obj\Debug\App.g.cs
+C:\Users\nicol\Documents\GitHub\Archive-Unlocker-Async\obj\Debug\BruteForcer_MarkupCompile.cache
+C:\Users\nicol\Documents\GitHub\Archive-Unlocker-Async\obj\Debug\BruteForcer_MarkupCompile.lref

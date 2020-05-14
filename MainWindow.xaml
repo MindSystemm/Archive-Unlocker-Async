@@ -1,0 +1,49 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BruteForcer"
+        xmlns:Controls="clr-namespace:AdonisUI.Controls;assembly=AdonisUI" x:Name="AdonisWindow" x:Class="BruteForcer.MainWindow"
+        mc:Ignorable="d"
+        Title="Archive Unlocker by MindSystem" Height="467.778" Width="800" Foreground="#FF292CA5" Background="#FF1E1E1F" FontFamily="Century Gothic"
+     >
+    <Window.Icon>
+        <ImageSource>Resources/mind.ico</ImageSource>
+    </Window.Icon>
+    <Window.Style>
+        <Style TargetType="{x:Type Window}" BasedOn="{StaticResource {x:Type Window}}"/>
+    </Window.Style>
+    <Grid AllowDrop="True">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <ProgressBar x:Name="Progress" HorizontalAlignment="Left" Height="10" Margin="256,410,0,0" VerticalAlignment="Top" Width="276" Foreground="#FF3E788A" Background="#FF1654FF"/>
+        <GroupBox Header="Bruteforcing Infos" HorizontalAlignment="Left" Height="192" Margin="5,9,0,0" VerticalAlignment="Top" Width="773" Drop="TextBox1DragDrop" DragEnter="TextBox1DragEnter" Foreground="#FF3E788A" Background="#FF292C33">
+            <Grid HorizontalAlignment="Left" Height="162" Margin="5,11,-6.667,-4.333" VerticalAlignment="Top" Width="763" DragEnter="TextBox1DragEnter" Drop="TextBox1DragDrop">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label x:Name="WordT" Content="" HorizontalAlignment="Left" Margin="104,114,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.754,1.672" Foreground="#FF3E788A"/>
+                <Label x:Name="RarT" Content="" HorizontalAlignment="Left" Margin="80,20,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.837,-2.426" Foreground="#FF3E788A"/>
+                <Label x:Name="InfoL" Content="Drag &amp; Drop your wordlist &amp; your .rar here !" HorizontalAlignment="Left" Margin="251,64,0,0" VerticalAlignment="Top" Foreground="#FF3E788A" FontSize="14" FontWeight="Bold"/>
+                <Label Content="Rar Path : " HorizontalAlignment="Left" Margin="8,20,0,0" VerticalAlignment="Top" RenderTransformOrigin="-4.226,0.869" Foreground="#FF3E788A"/>
+                <Label Content="Wordlist path : " HorizontalAlignment="Left" Margin="8,113,0,0" VerticalAlignment="Top" Foreground="#FF3E788B"/>
+                <Image HorizontalAlignment="Left" Height="100" Margin="629,13,0,0" VerticalAlignment="Top" Width="100" Source="Resources/RarIcon.png"/>
+                
+            </Grid>
+
+        </GroupBox>
+
+        <GroupBox Header="BruteForcing Result" HorizontalAlignment="Left" Height="192" Margin="7,207,0,0" VerticalAlignment="Top" Width="773" Background="#FF292C33" Foreground="#FF3E788A">
+            <Grid HorizontalAlignment="Left" Height="159" Margin="2,8,-2,-4.333" VerticalAlignment="Top" Width="750">
+                <Label x:Name="PasswordT" Content="Passwords left : " HorizontalAlignment="Left" Margin="8,11,0,0" VerticalAlignment="Top" Foreground="#FF3E788A"/>
+                <Label x:Name="TestingT" Content="Testing password : " HorizontalAlignment="Left" Margin="8,62,0,0" VerticalAlignment="Top" Foreground="#FF3E788A"/>
+                <Label x:Name="NbrThread" Content="Number of threads : " HorizontalAlignment="Left" Margin="8,120,0,0" VerticalAlignment="Top" Foreground="#FF3E788A"/>
+                <Button Content="Start ! " HorizontalAlignment="Left" Margin="585,26,0,0" VerticalAlignment="Top" Width="145" Click="Button_Click_1" Height="47" Background="#FF3E788A"/>
+                <Label x:Name="FinalPass" Content="Label" HorizontalAlignment="Left" Margin="588,89,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
+            </Grid>
+        </GroupBox>
+
+    </Grid>
+</Window>
